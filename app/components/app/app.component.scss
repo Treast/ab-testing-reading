@@ -1,0 +1,66 @@
+@import "./loader";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+#swipe, #touch {
+  display: none;
+}
+
+section {
+  padding: 50px;
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h3 {
+    margin: 30px 0;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.2)
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  a {
+    display: inline-block;
+
+    padding: 15px 20px;
+    background-color: #d63031;
+
+    color: white;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+  }
+}
+
+#scroll {
+  p {
+    margin: 100px 0;
+  }
+}
+
+#swipe, #touch {
+  overflow: hidden;
+  p {
+    display: none;
+    height: 100vh;
+    padding: 30px 50px;
+    margin: 0 -50px;
+    
+    &:first-of-type {
+      display: block;
+    }
+  }
+  
+  #btnTouch, #btnForm {
+    display: none;
+  }
+}

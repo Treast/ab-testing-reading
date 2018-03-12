@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= JSON.stringify(htmlWebpackPlugin.options.metadata.title).slice(1).slice(0,-1) %></title>
+
+    <meta name="title" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.title) %>>
+    <meta name="description"
+          content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.description) %>>
+    <meta name="author" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.author) %>>
+    <meta name="copyright" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.copyright) %>>
+    <meta name="keywords" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.keywords) %>>
+    <meta property="og:title" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.title) %>>
+    <meta property="og:description"
+          content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.description) %>>
+    <meta property="og:url" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.url) %>>
+    <meta property="og:image" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.thumbnail.url) %>>
+    <meta property="og:image:secure_url" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.thumbnail.url) %>>
+    <meta property="og:image:height" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.thumbnail.height) %>>
+    <meta property="og:image:width" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.thumbnail.width) %>>
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.title) %>>
+    <meta property="og:locale" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.language_iso) %>>
+    <meta property="og:type" content="website">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.title) %>>
+    <meta name="twitter:description"
+          content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.description) %>>
+    <meta name="twitter:image" content=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.thumbnail.url) %>>
+    <link rel="canonical" href=<%= JSON.stringify(htmlWebpackPlugin.options.metadata.url) %>>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<div id="loader">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<section id="scroll">
+    <h1>Scroll: Tu ne voleras point !</h1>
+    <h3>Pour passer au texte suivant, faîtes défiler l'écran</h3>
+    <p>Les grandes surfaces : de véritables cavernes d’Ali Baba où malheureusement tout est payant.</p>
+    <p>Comment résister à la tentation de voler si un jour l’envie est trop forte, le porte monnaie trop vide ou si vous êtes tout simplement cleptomane ? C’est humain, très humain.</p>
+    <p>Mais si vous ne voulez pas vous faire prendre, cher(e) client(e), évitez les stratagèmes suivants, trop connus des caissières, ou alors aménagez-les.</p>
+    <a href="#swipe" id="btnSwipe">Prochain test</a>
+</section>
+<section id="swipe">
+    <h1>Swipe: Le Beau parleur</h1>
+    <h3>Pour passer au texte suivant, swipez à droite</h3>
+    <p>Il est très volubile, raconte sa vie, plein de blagues avec de grands gestes. Un vrai clown ou plus exactement un vrai magicien. </p>
+    <p>Il espère ainsi “endormir” l’attention de la caissière qui ne s’apercevra pas que son ventre sous son pardessus est bizarrement rebondi.</p>
+    <p>Vous avez la tchatche d’un Luchini ou d’un Debbouze ? Vous pouvez tenter votre chance, mais alors soyez sûr(e) de votre talent car si le public n’est pas très réceptif, vous risquez de jouer votre prochain numéro entre deux agents</p>
+    <a href="#touch" id="btnTouch">Prochain test</a>
+</section>
+<section id="touch">
+    <h1>Tap: Le couple qui s’engueule</h1>
+    <h3>Pour passer au texte suivant, touchez/tappez l'écran</h3>
+    <p>Alors que la caissière est en train de scanner leurs articles, une brusque et violente dispute éclate entre le mari et la femme pour une histoire de produits achetés en double ou de couleur de papier-toilette…</p>
+    <p>Le ton monte, ils en viennent aux mains. La caissière ne sait plus où se mettre et baisse les yeux. Ils en profitent pour discrètement faire passer un sac à dos rempli de courses.</p>
+    <p>Laissez tomber cette tactique, la plupart des caissières d’aujourd’hui adorent les scènes de ménage et n’en perdent pas une miette. A moins que vous n’alliez jusqu’à vous mettre à poil en arrachant vos vêtements (en même temps, la technique risque d’attirer un peu trop de regards).</p>
+    <a href="https://goo.gl/forms/Fz1Nu2mJXmMMQDd33" id="btnForm">Répondre aux questions</a>
+</section>
+</body>
+</html>
