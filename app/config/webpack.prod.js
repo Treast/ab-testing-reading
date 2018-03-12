@@ -3,6 +3,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var HTMLWebpackPlugin = require('html-webpack-plugin')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
 var UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+var metadata = require('./metadata')
 
 module.exports = {
     entry: './app/main.js',
@@ -71,7 +72,8 @@ module.exports = {
             filename: 'index.html',
             template: './app/index.html',
             hash: true,
-            inject: true
+            inject: true,
+			metadata
         }),
         new UglifyJsPlugin(),
         new CopyWebpackPlugin([
